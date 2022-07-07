@@ -1,3 +1,6 @@
+// Подключаем normalize
+@import "./normalize";
+
 // Подключаем переменные
 @import "./variables";
 
@@ -6,6 +9,3 @@
 
 // Подключаем стили для header
 @import "./blocks/header";
-
-// Подключаем normalize
-@import "./normalize";
