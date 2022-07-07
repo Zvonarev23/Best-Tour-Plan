@@ -1,0 +1,11 @@
+// Подключаем normalize
+@import "./normalize";
+
+// Подключаем переменные
+@import "./variables";
+
+// Подключаем основные настройки
+@import "./settings";
+
+// Подключаем стили для header
+@import "./blocks/header";
