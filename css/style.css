@@ -51,6 +51,15 @@ body {
   font-size: 12px;
   font-weight: 400;
 }
+.search__input_size_s::-moz-placeholder {
+  color: #333333;
+}
+.search__input_size_s:-ms-input-placeholder {
+  color: #333333;
+}
+.search__input_size_s::placeholder {
+  color: #333333;
+}
 .search__button {
   display: flex;
   align-items: center;
@@ -66,6 +75,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
+  color: #333333;
 }
 .user__avatar {
   width: 40px;
