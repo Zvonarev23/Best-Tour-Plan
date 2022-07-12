@@ -52,16 +52,16 @@
   }
 }
 
-@media (max-width: 760px) {
-  .header__search {
-    display: none;
-  }
-
+@media (max-width: 767px) {
   .user {
     display: none;
   }
 
   .nav {
+    display: none;
+  }
+
+  .header__search {
     display: none;
   }
 
