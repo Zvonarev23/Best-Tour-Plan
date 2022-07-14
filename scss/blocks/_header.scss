@@ -1,22 +1,25 @@
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 40px 0 40px 0;
+.header {
   background-color: #fff;
+
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0 40px 0;
+  }
+
+  &__search {
+    margin-right: auto;
+    margin-left: 108px;
+    height: 40px;
+    border-radius: 6px;
+  }
 }
 
 .logo__image {
   margin-top: 2px;
   width: 177px;
   height: 24px;
-}
-
-.header__search {
-  margin-right: auto;
-  margin-left: 108px;
-  height: 40px;
-  border-radius: 6px;
 }
 
 .search {
