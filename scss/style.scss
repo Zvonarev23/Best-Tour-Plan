@@ -10,5 +10,11 @@
 // Подключаем стили для header
 @import "./blocks/header";
 
+// Подключаем блок breadcrumb
+@import "./blocks/breadcrumb";
+
+// Подключаем блок Отель
+@import "./blocks/hotel";
+
 // Подключаем медиа-запросы
 @import "./media";
