@@ -87,3 +87,62 @@
     }
   }
 }
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
+
+.hotel-grid {
+  display: flex;
+  padding-bottom: 70px;
+}
+
+.swiper {
+  margin-left: 2.5px;
+  width: 728px;
+  height: 450px;
+  border-radius: 8px;
+  position: relative;
+  z-index: 0;
+    
+  &::after {
+    content: "";
+    top: 0;      
+	  left: 0; 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+    }
+
+   &-button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    background-position: center;
+    border: none;
+    
+    &-prev {
+    margin-left: 6px;
+    margin-top: -13px;
+    background-image: url("../../img/arrow-prev.svg");
+    background-repeat: no-repeat;
+    }
+
+    &-next {
+    margin-right: 8px;
+    margin-top: -12px;
+    background-image: url("../../img/arrow-next.svg");
+    background-repeat: no-repeat;
+    }
+  }
+
+  &-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
