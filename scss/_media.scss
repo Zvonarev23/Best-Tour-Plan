@@ -2,6 +2,16 @@
   .container {
     padding: 0 30px;
   }
+
+  .hotel-grid {
+    &__slider {
+      margin-bottom: 30px;
+    }
+  }
+
+  .slider {
+    width: 60%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -11,18 +21,50 @@
 
   .nav__link {
     font-size: 12px;
+    line-height: 15px;
   }
 
   .logo__image {
-    margin-top: 0;
     width: 150px;
     height: 22px;
+    margin-top: 0;
   }
 
   .header__search {
     margin-left: auto;
   }
+
+  .hotel-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider {
+    width: 700px;
+  }
+
+  .booking { 
+    max-width: 700px;
+    display: flex;
+
+    &__wrap {
+      width: 340px;
+      height: 210px;
+      margin-right: 20px;
+    }
+
+    &__button {
+      padding: 14px 78px 13px 78px;
+    }
+  }
+
+  .map {
+    width: 340px;
+    height: 210px;
+  }
 }
+
+
 
 @media (max-width: 768px) {
   .container {
@@ -35,8 +77,8 @@
   }
 
   .logo__image {
-    height: 18px;
     width: 132.75px;
+    height: 18px;
   }
 
   .header__search {
@@ -46,9 +88,14 @@
   }
 
   .nav {
+    margin-bottom: 3px;
+
     &__list {
-      padding: 18px 13.5px 23.5px 13.5px;
-      margin-bottom: 3px;
+      padding: 18px 13.5px 23.5px 13.5px;  
+    }
+
+    &__item {
+      margin-top: 0.5px;
     }
   }
 
@@ -61,11 +108,55 @@
   .hotel-info {
     &__stars {
       margin-top: 2px;
+      margin-bottom: 1px;
     }
 
     &__raiting {
       margin-top: 8.5px;
       margin-left: 1.5px;
+    }
+
+    &__offer {
+      margin-top: 5.5px;
+    }
+  }
+
+  .hotel-grid {
+    padding-top: 2px;
+  }
+
+  .slider {
+    margin-left: 0;
+    margin-right: 5px;
+  }
+
+  .booking {
+    &__wrap {
+      width: 340px;
+      height: 210px;
+      padding-left: 23px;
+      padding-right: 22px;
+    }
+
+    &__per-room {
+      margin-top: -1px;
+    }
+
+    &__text {
+      margin-top: 5.5px;
+    }
+
+    &__top {
+      margin-bottom: 12px;
+    }
+
+    &__call-center {
+      margin-bottom: 16px;
+    }
+
+    &__button {
+      margin-top: 1px;
+      padding: 12px 84px 14px 83px;
     }
   }
 }
@@ -73,7 +164,7 @@
 @media (max-width: 767px) {
   .container {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20.5px;
   }
 
   .user {
@@ -101,12 +192,12 @@
   }
 
   .burger-menu {
+    width: 16px;
+    height: 11px; 
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0;
-    width: 16px;
-    height: 11px;
     border: none;
     background-color: $light;
 
@@ -142,9 +233,140 @@
     }
 
     &__stars {
-      flex-basis: content;
       margin-top: 0;
-      margin-right: 17px;
+      margin-right: 17px;     
+      flex-basis: content;
     }
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  .booking {
+    flex-wrap: wrap;
+
+    &__wrap {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    &__button {
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .map {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .slider {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    margin-left: -1px;
+  }
+
+  .hotel-info {
+    &__offer {
+      margin-top: 1px;
+      padding-right: 9px;
+    }
+
+    &__stars {
+      margin-right: 18px;
+    }
+
+    &__star {
+      &:last-of-type {
+        margin-left: -1px;
+      }
+    }
+  }
+
+  .hotel-grid {
+    padding-top: 19px;
+  }
+
+  .slider {
+    width: 278.44px;
+    height: 179px;    
+    margin-right: 6.5px;
+    margin-bottom: 20px;
+  }
+
+  .swiper {
+    &-button {
+      width: 12px;
+      height: 12px;
+
+      &-prev {
+        margin-left: -5px;
+        margin-top: -5px;
+        background-image: url("../../img/arrow-prev-mobile.svg");
+      }
+
+      &-next {
+        margin-right: -3px;
+        margin-top: -5px;
+        background-image: url("../../img/arrow-next-mobile.svg");
+      }
+    }
+  }
+
+  .booking {
+    justify-content: center;
+
+    &__wrap {
+      width: 279px;
+      height: 210px;
+      margin-bottom: 20px;
+      padding-left: 22px;
+    }
+
+    &__call-center {
+      margin-bottom: 17px;
+    }
+
+    &__phone {
+      margin-right: 2px;
+    }
+    
+    &__top {
+      margin-bottom: 12px;
+    }
+
+    &__person-room {
+      &:last-of-type {
+        margin-top: 7px;
+      } 
+    }
+
+    &__icon {
+      margin-bottom: 1px;
+      margin-left: 1.5px;
+      margin-top: -1px;
+    }
+
+    &__button {
+      padding: 13px 53.5px 13px 53.5px;
+    }
+
+    &__count {
+      margin-bottom: 1px;
+      margin-right: -1px;
+    }
+  }
+
+  .map {
+    width: 280px;
+    height: 173px;
   }
 }
