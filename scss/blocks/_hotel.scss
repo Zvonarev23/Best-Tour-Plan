@@ -1,9 +1,9 @@
 .hotel {
   &-info {
+    padding: 14px 0 18px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 14px 0 19px 0;
 
     &__text {
       display: flex;
@@ -11,11 +11,11 @@
     }
 
     &__stars {
-      display: block;
       margin-top: 1.5px;
       margin-bottom: 2.5px;
       margin-left: 0.5px;
       width: 100%;
+      display: block;
     }
 
     &__star {
@@ -31,12 +31,12 @@
     }
 
     &__offer {
-      display: flex;
-      align-items: center;
       height: 20px;
       margin-top: 4.5px;
       margin-left: 14.5px;
       padding: 3px 8.7px 4px 8.7px;
+      display: flex;
+      align-items: center;
       font-size: 10px;
       font-weight: 600;
       line-height: 13px;
@@ -46,23 +46,23 @@
     }
 
     &__description {
-      margin: 0;
       width: 100%;
+      margin: 0;
       font-size: 12px;
       font-weight: 400;
       line-height: 15px;
     }
 
     &__raiting {
+      width: 65px;
+      min-height: 45px;
+      padding: 9px 6px 6px 7px;
+      margin-top: 5.5px;
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      padding: 9px 6px 6px 7px;
-      margin-top: 5.5px;
-      width: 65px;
-      min-height: 45px;
       background-color: $primary;
       color: $light;
       border-radius: 4px;
@@ -93,55 +93,172 @@
 }
 
 .hotel-grid {
-  display: flex;
+  padding-top: 1px;
   padding-bottom: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider {
+  width: 728px;
+  height: 450px;  
+  margin-left: -1px;
 }
 
 .swiper {
-  margin-left: 2.5px;
-  width: 728px;
-  height: 450px;
-  border-radius: 8px;
   position: relative;
   z-index: 0;
+  width: 100%;
+  height: 100%;
+  margin-left: 2.5px;
+  border-radius: 8px;
     
   &::after {
     content: "";
+    position: absolute;
+    z-index: 1;
     top: 0;      
 	  left: 0; 
     width: 100%;
     height: 100%;
-    position: absolute;
-    z-index: 1;
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
     }
 
-   &-button {
+  &-button {
     width: 30px;
     height: 30px;
+    border: none;
     background-color: transparent;
     background-position: center;
-    border: none;
-    
+
     &-prev {
-    margin-left: 6px;
-    margin-top: -13px;
-    background-image: url("../../img/arrow-prev.svg");
-    background-repeat: no-repeat;
+      margin-left: 6px;
+      margin-top: -13px;
+      background-image: url("../../img/arrow-prev.svg");
+      background-repeat: no-repeat;
     }
 
     &-next {
-    margin-right: 8px;
-    margin-top: -12px;
-    background-image: url("../../img/arrow-next.svg");
-    background-repeat: no-repeat;
+      margin-right: 8px;
+      margin-top: -12px;
+      background-image: url("../../img/arrow-next.svg");
+      background-repeat: no-repeat;
     }
   }
 
   &-image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
+}
+
+.booking {
+  &__wrap {
+    width: 350px;
+    height: 211px;
+    margin-bottom: 27px;
+    padding: 29px 29px 27px 26px;
+    border-radius: 8px;
+    font-family: "Nunito";
+    background-color: $dark;
+    color: $light;
+  }
+
+  &__top {
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price-start {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  &__cost {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+  }
+
+  &__per-room {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  &__person-room {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    
+    &:first-of-type {
+      margin-top: -2px;
+    }
+  }
+
+  &__text {
+    width: 80px;
+    margin-top: 7px;
+  }
+
+  &__count {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__call-center {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__quick {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-icon {
+    margin-right: 8px;
+  }
+
+  &__number {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;  
+    color: $light;
+  }
+
+  &__button {
+    padding: 14px 83px 13px 84px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: $primary;
+    color: $light;
+  }
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 
