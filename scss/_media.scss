@@ -3,13 +3,7 @@
     padding: 0 30px;
   }
 
-  .hotel-grid {
-    &__slider {
-      margin-bottom: 30px;
-    }
-  }
-
-  .slider {
+  .hotel-slider {
     width: 60%;
   }
 }
@@ -39,8 +33,10 @@
     align-items: center;
   }
 
-  .slider {
+  .hotel-slider {
     width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
   }
 
   .booking { 
@@ -61,6 +57,21 @@
   .map {
     width: 340px;
     height: 210px;
+  }
+
+  .reviews-slider {
+    &__card {
+      width: 579px;
+      padding: 0 75px 30px 79px;
+
+      &::before {
+        display: none;
+      }
+      
+      &::after {
+        display: none;
+      }  
+    }
   }
 }
 
@@ -123,9 +134,10 @@
 
   .hotel-grid {
     padding-top: 2px;
+    padding-bottom: 60px;
   }
 
-  .slider {
+  .hotel-slider {
     margin-left: 0;
     margin-right: 5px;
   }
@@ -134,6 +146,7 @@
     &__wrap {
       width: 340px;
       height: 210px;
+      margin-bottom: 0;
       padding-left: 23px;
       padding-right: 22px;
     }
@@ -157,6 +170,56 @@
     &__button {
       margin-top: 1px;
       padding: 12px 84px 14px 83px;
+    }
+  }
+
+  .newsletter {
+    &-wrapper {
+      max-width: 699.5px;
+      padding: 92px 0 92px;
+    }
+  }
+
+  .subscribe {
+    &__title {
+      margin-top: -1px;
+      margin-left: -0.5px;
+    }
+    
+    &__text {
+    margin-left: -1px;
+    }
+  }
+
+  .reviews {
+    &__section-title {
+      margin-bottom: 50px;
+      font-size: 30px;
+      line-height: 38px;
+    }
+
+    &-slider {
+      &__card {
+        padding: 0 60px 30px 64px;
+      }
+
+      &__button {
+        &_prev {
+          margin-left: -9px;
+          margin-top: -15px;
+        }
+
+        &_next {
+          margin-right: -9px;
+          margin-top: -15px;
+        }
+      }
+    }
+  }
+
+  .profile {
+    &__rating {
+      margin-left: 3px;
     }
   }
 }
@@ -239,7 +302,7 @@
     }
   }
 
-  .slider {
+  .hotel-slider {
     width: 100%;
   }
 
@@ -249,6 +312,7 @@
     &__wrap {
       width: 100%;
       margin-right: 0;
+      margin-bottom: 20px;
     }
 
     &__button {
@@ -259,13 +323,83 @@
 
   .map {
     width: 100%;
+
+    &__iframe {
+      width: 100%;
+    }
+  }
+
+  .newsletter {
+    &-wrapper {
+      width: 100%;
+      padding: 80px 20px;
+    }
+  }
+
+  .subscribe {
+    &__text {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__title {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  .send-form {
+    max-width: 290px;
+
+    &__input {
+      padding: 0 20px;
+    }
+  }
+
+  .reviews-slider {
+    &__card {
+      width: 450px;
+      padding: 0 40px 30px;
+    }
   }
 }
 
 @media (max-width: 576px) {
-  .slider {
+  .hotel-slider {
     height: 300px;
   }
+
+  .newsletter {
+    &-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .subscribe {
+    &__text {
+      margin-bottom: 5px;
+    }
+
+    &__title {
+      margin-bottom: 37px;
+    }
+  }
+
+  .reviews {
+
+    &__section-title {
+      font-size: 24px;
+      line-height: 32px;
+    }
+    
+    &-slider {
+      &__card {
+        width: 350px;
+        padding: 0 30px 30px;
+      }
+    } 
+  } 
 }
 
 @media (max-width: 480px) {
@@ -292,27 +426,26 @@
 
   .hotel-grid {
     padding-top: 19px;
+    padding-bottom: 40px;
   }
 
-  .slider {
+  .hotel-slider {
     width: 278.44px;
     height: 179px;    
     margin-right: 6.5px;
     margin-bottom: 20px;
-  }
 
-  .swiper {
-    &-button {
+    &__button {
       width: 12px;
       height: 12px;
 
-      &-prev {
+      &_prev {
         margin-left: -5px;
         margin-top: -5px;
         background-image: url("../../img/arrow-prev-mobile.svg");
       }
 
-      &-next {
+      &_next {
         margin-right: -3px;
         margin-top: -5px;
         background-image: url("../../img/arrow-next-mobile.svg");
@@ -364,8 +497,58 @@
     }
   }
 
+  .newsletter {
+    &-wrapper {
+      width: 100%;
+      padding-top: 76px;
+      padding-bottom: 83px;
+    }
+  }
+
   .map {
     width: 280px;
     height: 173px;
+  }
+
+  .send-form {
+    max-width: 280px;
+  }
+
+  .reviews {
+    padding-bottom: 50px;
+
+    &__section-title {
+      margin-bottom: 42px;
+      font-size: 18px;
+      line-height: 23px;
+    }
+    
+    &-slider {
+      &__card {
+        width: 281px;
+        padding: 0 30px 36px 33px;
+      }
+
+      &__button {
+        &_prev {
+          top: 45px;
+          margin-left: 22px;
+        }
+
+        &_next {
+          top: 45px;
+          margin-right: 27px;
+        }
+      }
+
+      &__profile {
+        margin-right: 4px;
+      }
+
+      &__comment {
+        text-align: start;
+        word-spacing: normal;
+      }
+    }
   }
 }

@@ -94,25 +94,20 @@
 
 .hotel-grid {
   padding-top: 1px;
-  padding-bottom: 70px;
+  padding-bottom: 68px;
   display: flex;
   justify-content: space-between;
 }
 
-.slider {
+.hotel-slider {
+  position: relative;
+  z-index: 0;
   width: 728px;
   height: 450px;  
   margin-left: -1px;
-}
-
-.swiper {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
   margin-left: 2.5px;
   border-radius: 8px;
-    
+
   &::after {
     content: "";
     position: absolute;
@@ -124,21 +119,21 @@
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
     }
 
-  &-button {
+  &__button {
     width: 30px;
     height: 30px;
     border: none;
     background-color: transparent;
     background-position: center;
 
-    &-prev {
+    &_prev {
       margin-left: 6px;
       margin-top: -13px;
       background-image: url("../../img/arrow-prev.svg");
       background-repeat: no-repeat;
     }
 
-    &-next {
+    &_next {
       margin-right: 8px;
       margin-top: -12px;
       background-image: url("../../img/arrow-next.svg");
@@ -146,7 +141,7 @@
     }
   }
 
-  &-image {
+  &__image {
     width: 100%;
     height: 100%;
     object-fit: cover;

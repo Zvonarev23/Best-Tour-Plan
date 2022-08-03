@@ -16,5 +16,11 @@
 // Подключаем блок Отель
 @import "./blocks/hotel";
 
+// Подключаем блок c подпиской
+@import "./blocks/newsletter";
+
+// Подключаем блок c отзывами 
+@import "./blocks/reviews";
+
 // Подключаем медиа-запросы
 @import "./media";
