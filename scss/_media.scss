@@ -64,10 +64,7 @@
       width: 579px;
       padding: 0 75px 30px 79px;
 
-      &::before {
-        display: none;
-      }
-      
+      &::before,
       &::after {
         display: none;
       }  
@@ -187,7 +184,7 @@
     }
     
     &__text {
-    margin-left: -1px;
+      margin-left: -1px;
     }
   }
 
@@ -387,7 +384,6 @@
   }
 
   .reviews {
-
     &__section-title {
       font-size: 24px;
       line-height: 32px;
