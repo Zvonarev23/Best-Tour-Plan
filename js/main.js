@@ -13,3 +13,12 @@ const swiper = new Swiper('.swiper', {
     onlyInViewport: true,
   },
 });
+
+const swiper2 = new Swiper('.reviews-swiper', {
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
