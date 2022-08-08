@@ -1,16 +1,23 @@
 @media (max-width: 1200px) {
   .container {
-    padding: 0 30px;
+    max-width: 960px;
   }
 
   .hotel-slider {
     width: 60%;
   }
+
+  .activities {
+    &__card {
+      width: 230px;
+      min-height: 230px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
   .container {
-    padding: 0 40px;
+    max-width: 700px;
   }
 
   .nav__link {
@@ -59,6 +66,10 @@
     height: 210px;
   }
 
+  .reviews {
+    padding-bottom: 60px;
+  }
+
   .reviews-slider {
     &__card {
       width: 579px;
@@ -70,9 +81,18 @@
       }  
     }
   }
+
+  .activities {
+    &__content {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      width: 340px;
+      min-height: 255px;
+    }
+  }
 }
-
-
 
 @media (max-width: 768px) {
   .container {
@@ -359,6 +379,12 @@
       padding: 0 40px 30px;
     }
   }
+
+  .activities {
+    &__card {
+      width: 49%;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -396,6 +422,12 @@
       }
     } 
   } 
+
+  .activities {
+    &__card {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -545,6 +577,18 @@
         text-align: start;
         word-spacing: normal;
       }
+    }
+  }
+
+  .activities {
+    &-wrapper {
+      padding-top: 40px;
+    }
+    
+    &__section-title {
+      margin-bottom: 36px;
+      font-size: 18px;
+      line-height: 23px;
     }
   }
 }
