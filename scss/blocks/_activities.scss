@@ -54,15 +54,15 @@
   }
 
   &__description {
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 18px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: $light;
   }
 
   &__button {
-    margin-top: 18px;
     padding: 7px 21px 7px 22px;
     border: none;
     border-radius: 4px;
