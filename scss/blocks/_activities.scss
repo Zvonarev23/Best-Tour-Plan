@@ -1,7 +1,6 @@
 .activities {
-  &-wrapper {
-    padding: 60px 0 98px 0;
-  }
+  margin-bottom: 70px;
+  padding-top: 60px;
 
   &__section-title {
     margin-top: 0;
@@ -22,8 +21,7 @@
     z-index: 1;
     width: 255px;
     min-height: 255px;
-    margin-bottom: 20px;
-    padding: 24px 26px 25px;
+    padding: 24px 26px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;

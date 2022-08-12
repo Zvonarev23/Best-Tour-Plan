@@ -1,5 +1,6 @@
 .reviews {
-  padding: 40px 0 70px;
+  margin-bottom: 70px;
+  padding-top: 40px;
 
   &__section-title {
     margin-top: 0;
@@ -50,12 +51,12 @@
 
     &__profile {
       margin-top: -45px;
+      margin-bottom: 16px;
     }
 
     &__comment {
       position: relative;
       z-index: 1;
-      margin-top: 29px;
       margin-bottom: 0;
       font-weight: 400;
       font-size: 12px;
@@ -66,24 +67,22 @@
     }
   
     &__button {
+      transform: translateY(-24%);
       width: 30px;
       height: 30px;
       border: none;
+      background-repeat: no-repeat;
       background-color: transparent;
       background-position: center;
 
       &_prev {
-        margin-left: 8px;
-        margin-top: -29px;
+        left: 18px;
         background-image: url("../../img/arrow-prev-reviews.svg");
-        background-repeat: no-repeat;
       }
 
       &_next {
-        margin-right: 8px;
-        margin-top: -29px;
+        right: 18px;
         background-image: url("../../img/arrow-next-reviews.svg");
-        background-repeat: no-repeat;
       }
     }
   }
