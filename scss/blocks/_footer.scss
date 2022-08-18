@@ -1,0 +1,248 @@
+.footer {
+  background-color: $dark;
+
+  &-wrapper {
+    padding: 108px 0 46px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas: 
+    "logo categories additional legal"
+    "logo categories social social"
+    "contacts contacts message message"
+    ". bottoms bottoms bottoms";
+  }
+
+  &__logo {
+    padding-top: 30px;
+    align-self: start;
+    grid-area: logo;
+  }
+
+  &__categories {
+    padding-left: 5px;
+    align-self: start;
+    grid-area: categories;
+
+    .footer__title {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__additional {
+    padding-left: 10px;
+    grid-area: additional;
+  }
+
+  &__legal {
+    margin-right: 5px;
+    align-self: start;
+    justify-self: end;
+    grid-area: legal;
+  }
+
+  &__contacts {
+    padding-top: 83px;
+    grid-area: contacts;
+
+    .footer__title {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__social-network {
+    padding-top: 15px;
+    padding-left: 10px;
+    display: flex;
+    grid-area: social;
+
+    .footer__title {
+      margin-bottom: 0;
+      margin-right: 44px;
+    }
+  }
+
+  &__send-message {
+    margin-right: 1px;
+    padding-top: 72px;
+    grid-area: message;
+    justify-self: end;
+
+    .footer__title {
+      margin-bottom: 34px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: $light;   
+    text-transform: uppercase;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__contacts-item {
+    display: flex;
+
+    &:first-child {
+      margin-bottom: 14px;
+    }
+
+    &:nth-child(2) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__contacts-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    padding-top: 5px;
+    flex-shrink: 0;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BDBDBD;
+  }
+
+  &__info {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BDBDBD;
+  }
+
+  &__contacts-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BDBDBD;
+
+    .phone-number {
+      white-space: nowrap;
+    }
+  }
+
+  &__social-links {
+    .footer__link:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.form {
+  width: 539px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__inputs {
+    width: 100%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input {
+    width: 255px;
+    height: 50px;
+    padding: 18px 23px;
+    border-radius: 4px;
+    border: none;
+    background-color: $light;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #BDBDBD;
+    }
+  }
+
+  &__textarea {
+    width: 539px;
+    height: 123px;
+    margin-bottom: 23px;
+    padding: 18px 23px;
+    border-radius: 4px;
+    resize: none;
+    background-color: $light;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+      color: #BDBDBD;
+    }
+  }
+
+  &__button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__button {
+    min-width: 160px;
+    padding: 17px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: $primary;
+    color: $light;
+  }
+
+  &__required {
+    margin-right: 1px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: #E0E0E0;
+  }
+}
+
+.footer-bottom {
+  padding-top: 84px;
+  padding-left: 133px;
+  grid-area: bottoms;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $light;
+  }
+
+  &__image {
+    margin-right: 1px;
+  }
+}
