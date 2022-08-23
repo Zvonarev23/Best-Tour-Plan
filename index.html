@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header header_mobile_fixed">
       <div class="container">
         <div class="header-top">
           <div class="logo header__logo">
@@ -28,7 +28,7 @@
             </a>
           </div>
 
-          <form class="search header__search" action="#">
+          <form class="search header__search header__search_mobile_hidden" action="#">
             <input
               class="search__input search__input_size_s"
               type="text"
@@ -44,7 +44,7 @@
             </button>
           </form>
 
-          <div class="user">
+          <div class="user user_mobile_hidden">
             <a class="user__link" href="#">
               <img
                 class="user__avatar"
@@ -69,6 +69,38 @@
       <nav class="nav">
         <div class="container">
           <ul class="nav__list">
+            <li class="nav__item nav__item_mobile_visible">
+              <div class="user user_mobile_visible">
+                <a class="user__link" href="#">
+                  <img
+                    class="user__avatar"
+                    src="./img/avatar.jpg"
+                    alt="photo user"
+                  />
+
+                  <span class="user__name user__name_light">Nathan</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav__item nav__item_mobile_visible">
+              <form class="search header__search header__search_mobile_visible" action="#">
+                <input
+                  class="search__input search__input_size_s"
+                  type="text"
+                  placeholder="Search Location"
+                />
+
+                <button class="button search__button">
+                  <img
+                    class="search__image"
+                    src="./img/search.svg"
+                    alt="magnifying glass"
+                  />
+                </button>
+              </form>
+            </li>
+
             <li class="nav__item">
               <a class="nav__link" href="#">All Deals</a>
             </li>

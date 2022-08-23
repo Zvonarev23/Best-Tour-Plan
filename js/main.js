@@ -22,3 +22,13 @@ const swiper2 = new Swiper('.reviews-swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const menuBtn = document.querySelector('.burger-menu');
+const navigation = document.querySelector('.nav');
+const body = document.querySelector('body');
+
+
+menuBtn.addEventListener('click', () => {
+  navigation.classList.toggle('nav_mobile_visible');
+  body.classList.toggle('lock');
+}); 
