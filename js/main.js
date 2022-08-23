@@ -23,10 +23,12 @@ const swiper2 = new Swiper('.reviews-swiper', {
   },
 });
 
-var menuBtn = document.querySelector('.burger-menu');
-menuBtn.addEventListener('click', function () {
+const menuBtn = document.querySelector('.burger-menu');
+const navigation = document.querySelector('.nav');
+const body = document.querySelector('body');
 
-  document.querySelector('.nav').classList.toggle('nav_mobile_visible')
-  document.querySelector('body').classList.toggle('lock')
 
+menuBtn.addEventListener('click', () => {
+  navigation.classList.toggle('nav_mobile_visible');
+  body.classList.toggle('lock');
 }); 
