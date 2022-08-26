@@ -27,8 +27,28 @@ const menuBtn = document.querySelector('.burger-menu');
 const navigation = document.querySelector('.nav');
 const body = document.querySelector('body');
 
-
 menuBtn.addEventListener('click', () => {
   navigation.classList.toggle('nav_mobile_visible');
   body.classList.toggle('lock');
 }); 
+
+const modalButton = document.querySelector('.booking__button');
+const modal = document.querySelector('.modal');
+const modalClose = document.querySelector('.modal__close');
+
+modalButton.addEventListener('click', () => {
+  modal.classList.toggle('modal_visible');
+  body.classList.toggle('lock');
+});
+
+modalClose.addEventListener('click', () => {
+  modal.classList.toggle('modal_visible');
+  body.classList.toggle('lock');
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.code == 'Escape') { 
+    modal.classList.remove('modal_visible');
+    body.classList.remove('lock');
+  }
+});

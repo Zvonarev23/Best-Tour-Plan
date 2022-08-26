@@ -616,15 +616,15 @@
 
           <div class="footer__send-message">
             <h3 class="footer__title">Send us a message</h3>
-            <form class="footer__form form" action="#">
-              <div class="form__inputs">
-                <input class="form__input form__input_name" type="text" placeholder="Your Full Name*">
-                <input class="form__input form__input_phone" type="text" placeholder="Phone Number*">
+            <form class="form footer__form" method="post"  action="send.php">
+              <div class="footer__inputs">
+                <input class="input footer__input footer__input_name" type="text" placeholder="Your Full Name*" name="name">
+                <input class="input footer__input footer__input_phone" type="text" placeholder="Phone Number*" name="phone">
               </div>
-              <textarea class="form__textarea" cols="30" rows="10" placeholder="Message"></textarea>
-              <div class="form__button-container">
-                <button class="form__button">Send</button>
-                <span class="form__required">* Required Fields</span>
+              <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
+              <div class="footer__button-container">
+                <button class="footer__button">Send</button>
+                <span class="footer__required">* Required Fields</span>
               </div>
             </form>
           </div>
@@ -654,6 +654,26 @@
         <!-- /.footer-wrapper -->
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <a class="modal__close">
+          <img class="close" src="./img/modal/close.svg" alt="button close">
+        </a>
+        <h3 class="modal__title">Booking</h3>
+        <form class="form modal__form" method="post"  action="send.php">
+          <input class="input modal__input modal__input_name" type="text" placeholder="Your Full Name*" name="name">
+          <input class="input modal__input modal__input_phone" type="text" placeholder="Phone Number*" name="phone">
+          <input class="input modal__input modal__input_name" type="text" placeholder="Email*" name="email">
+          <textarea class="textarea modal__textarea" placeholder="Message" name="message"></textarea>
+          <div class="modal__button-container">
+            <button class="modal__button">Send</button>
+            <span class="modal__required">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /.modal -->
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>

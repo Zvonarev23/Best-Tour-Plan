@@ -18,10 +18,10 @@
     &__contacts {
       width: 430px;
     }
-  }
 
-  .form {
-    width: 460px;
+    &__form {
+      width: 460px;
+    }
 
     &__input {
       width: 220px;
@@ -349,10 +349,10 @@
       padding-left: 18px;
       justify-self: start;
     }
-  }
 
-  .form {
-    width: 539px;
+    &__form {
+      width: 539px;
+    }
 
     &__input {
       width: 255px;
@@ -371,15 +371,18 @@
       margin-right: 0;
     }
   }
+
+  .modal {
+    &__dialog {
+      max-width: 400px;
+      padding: 25px 55px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
   body {
     padding-top: 72px;
-  }
-
-  .lock {
-    overflow: hidden;
   }
 
   .container {
@@ -666,6 +669,12 @@
     } 
   } 
 
+  .modal {
+    &__button {
+      min-width: 140px;
+    }
+  }
+
   .activities {
     &__card {
       width: 100%;
@@ -712,10 +721,10 @@
     &__send-message {
       width: 100%;
     }
-  }
 
-  .form {
-    width: 100%;
+    &__form {
+      width: 100%;
+    }
 
     &__inputs {
       margin-bottom: 15px;
@@ -735,6 +744,7 @@
     }
   }
 }
+
 
 @media (max-width: 480px) {
   .logo {
@@ -956,9 +966,7 @@
         margin-bottom: 15px;
       }
     }
-  }
 
-  .form {
     &__textarea {
       margin-bottom: 15px;
     }
@@ -971,7 +979,6 @@
     &__required {
       margin-bottom: 15px;
     }
-
   }
 
   .footer-bottom {
@@ -986,6 +993,21 @@
 
     &__list {
       margin-bottom: 10px;
+    }
+  }
+
+  .modal {
+    &__dialog {
+      width: 90%;
+      padding: 22px 30px;
+    }
+
+    &__required {
+      margin-bottom: 15px;
+    }
+
+    &__button-container {
+      flex-direction: column-reverse;
     }
   }
 }
