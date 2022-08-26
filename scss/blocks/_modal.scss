@@ -8,9 +8,7 @@
   background-color: rgba(0, 143, 223, 0.39);
   visibility: hidden;
   opacity: 0;
-  overflow-y: auto;
-    
-
+  
   &_visible {
     visibility: visible;
     opacity: 1;
@@ -23,9 +21,11 @@
     z-index: 11;
     transform: translate(-50%, -50%);
     max-width: 478px;
+    max-height: 100%;
     padding: 33px 88px;
     border-radius: 8px;
     background-color: $dark;
+    overflow-y: auto;
   }
 
   &__close {
