@@ -27,16 +27,7 @@ try {
     // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.mail.ru'; // SMTP сервера вашей почты
-    $mail->Username   = 'djon411@mail.ru'; // Логин на почте
-    $mail->Password   = 'j1T8cUYDVSVQ1Wa6sep2'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('djon411@mail.ru', 'Евгений Звонарев'); // Адрес самой почты и имя отправителя
-
-    // Получатель письма
-    $mail->addAddress('zvonarev.evgeniy@gmail.com');  
+    
 
 // Отправка сообщения
 $mail->isHTML(true);

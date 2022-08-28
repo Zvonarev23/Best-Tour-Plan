@@ -32,7 +32,9 @@
     position: absolute;
     top: 17px;
     right: 18px;
-    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: transparent;
   }
 
   &__title {

@@ -37,13 +37,13 @@ const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 
 modalButton.addEventListener('click', () => {
-  modal.classList.toggle('modal_visible');
-  body.classList.toggle('lock');
+  modal.classList.add('modal_visible');
+  body.classList.add('lock');
 });
 
 modalClose.addEventListener('click', () => {
-  modal.classList.toggle('modal_visible');
-  body.classList.toggle('lock');
+  modal.classList.remove('modal_visible');
+  body.classList.remove('lock');
 });
 
 document.addEventListener('keydown', (e) => {
