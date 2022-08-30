@@ -27,8 +27,6 @@ try {
     // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
-    
-
 // Отправка сообщения
 $mail->isHTML(true);
 $mail->Subject = $title;
