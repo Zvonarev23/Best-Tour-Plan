@@ -59,3 +59,12 @@ ul {
     color: #BDBDBD;
   }  
 }
+
+.just-validate-error-field {
+  border: 2px solid $primary;
+}
+
+.just-validate-error-label {
+  margin-top: 5px;
+  text-align: center;
+}
