@@ -1,0 +1,127 @@
+.reviews {
+  margin-bottom: 70px;
+  padding-top: 40px;
+
+  &__section-title {
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &-slider {
+    &__item {
+      margin-top: 45px;
+    }
+
+    &__card {
+      position: relative;
+      width: 731px;
+      margin: 0 auto;
+      padding: 0 95px 30px 99px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 8px;
+      background-color: $light;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 12px;
+        left: 64px;
+        width: 70px;
+        height: 48px;
+        background: url('../../img/quotes-left.svg') no-repeat;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 118px;
+        right: 60px;
+        width: 70px;
+        height: 48px;
+        background: url('../../img/quotes-right.svg') no-repeat;
+      }
+    }
+
+    &__profile {
+      margin-top: -45px;
+      margin-bottom: 16px;
+    }
+
+    &__comment {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 19px;
+      color: #333333;
+      text-align: justify;
+      word-spacing: 1px;
+    }
+  
+    &__button {
+      transform: translateY(-24%);
+      width: 30px;
+      height: 30px;
+      border: none;
+      background-repeat: no-repeat;
+      background-color: transparent;
+      background-position: center;
+
+      &_prev {
+        left: 18px;
+        background-image: url("../../img/arrow-prev-reviews.svg");
+      }
+
+      &_next {
+        right: 18px;
+        background-image: url("../../img/arrow-next-reviews.svg");
+      }
+    }
+  }
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 9px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    color: $primary;
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  &__rating {
+    margin-top: -3px;
+  }
+
+  &__star {
+    margin-left: -2px;
+  }
+}
+

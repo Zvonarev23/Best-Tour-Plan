@@ -4,7 +4,704 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Best Tour Plan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,600&family=Nunito:wght@400;600;800&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header header_mobile_fixed">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo header__logo">
+            <a class="logo__link" href="/">
+              <img
+                class="logo__image"
+                src="./img/horizontal-logo.svg"
+                alt="logo: Best Tour Plan"
+              />
+            </a>
+          </div>
+
+          <form class="search header__search header__search_mobile_hidden" action="#">
+            <input
+              class="search__input search__input_size_s"
+              type="text"
+              placeholder="Search Location"
+            />
+
+            <button class="button search__button">
+              <img
+                class="search__image"
+                src="./img/search.svg"
+                alt="magnifying glass"
+              />
+            </button>
+          </form>
+
+          <div class="user user_mobile_hidden">
+            <a class="user__link" href="#">
+              <img
+                class="user__avatar"
+                src="./img/avatar.jpg"
+                alt="photo user"
+              />
+
+              <span class="user__name">Nathan</span>
+            </a>
+          </div>
+
+          <button class="burger-menu">
+            <span class="burger-menu__btn"></span>
+
+            <span class="burger-menu__btn"></span>
+            
+            <span class="burger-menu__btn"></span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="container">
+          <ul class="nav__list">
+            <li class="nav__item nav__item_mobile_visible">
+              <div class="user user_mobile_visible">
+                <a class="user__link" href="#">
+                  <img
+                    class="user__avatar"
+                    src="./img/avatar.jpg"
+                    alt="photo user"
+                  />
+
+                  <span class="user__name user__name_light">Nathan</span>
+                </a>
+              </div>
+            </li>
+
+            <li class="nav__item nav__item_mobile_visible">
+              <form class="search header__search header__search_mobile_visible" action="#">
+                <input
+                  class="search__input search__input_size_s"
+                  type="text"
+                  placeholder="Search Location"
+                />
+
+                <button class="button search__button">
+                  <img
+                    class="search__image"
+                    src="./img/search.svg"
+                    alt="magnifying glass"
+                  />
+                </button>
+              </form>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">All Deals</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Hotels</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Activities</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Hotel Day Packages</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Restaurants</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Events</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="#">Rodrigues</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="breadcrumb">
+      <div class="container">
+        <ul class="breadcrumb__list">
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="#">Home</a>
+          </li>
+
+          <li class="breadcrumb__item">
+            <a class="breadcrumb__link" href="#">Flash Offers</a>
+          </li>
+
+          <li class="breadcrumb__item">Grand Hilton Hotel</li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel-wrapper">
+          <div class="hotel-info">
+            <div class="hotel-info__text">  
+              <div class="hotel-info__stars">
+                <img class="hotel-info__star" src="./img/star.svg" alt="star" />
+                
+                <img class="hotel-info__star" src="./img/star.svg" alt="star" />
+                
+                <img class="hotel-info__star" src="./img/star.svg" alt="star" />
+               
+                <img class="hotel-info__star" src="./img/star.svg" alt="star" />
+                
+                <img class="hotel-info__star" src="./img/star.svg" alt="star" />
+              </div>
+
+              <h1 class="hotel-info__name">Grand Hilton Hotel</h1>
+
+              <span class="hotel-info__offer">Flash Offer</span>
+
+              <p class="hotel-info__description">
+                Half-Board/ All Inclusive + Complimentary Activities + Child
+                Stays Free
+              </p>
+            </div>
+
+            <div class="hotel-info__raiting">
+              <span class="hotel-info__rattings">User Rattings</span>
+              
+              <span class="hotel-info__counter">4.5/<span class="hotel-info__max-counter">5</span></span>
+            </div>
+          </div>
+          <!-- /.hotel-info -->
+          <div class="hotel-grid">
+            <!-- Slider main container -->
+            <div class="swiper hotel-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper hotel-slider__wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="hotel-slider__image" src="./img/swiper-image-1.jpg" alt="slide">
+                </div>
+                
+                <div class="swiper-slide">
+                  <img class="hotel-slider__image" src="./img/swiper-image-2.jpg" alt="slide">
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="hotel-slider__image" src="./img/swiper-image-3.jpg" alt="slide">
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="hotel-slider__image" src="./img/swiper-image-4.jpg" alt="slide">
+                </div>
+
+                <div class="swiper-slide">
+                  <img class="hotel-slider__image" src="./img/swiper-image-5.jpg" alt="slide">
+                </div>
+              </div>
+
+              <button class="hotel-slider__button hotel-slider__button_prev swiper-button-prev"></button>
+
+              <button class="hotel-slider__button hotel-slider__button_next swiper-button-next"></button>
+            </div>
+              <!-- /.hotel-slider -->
+
+            <div class="booking">
+              <div class="booking__wrap">
+                <div class="booking__top">
+                  <div class="booking__price">
+                    <span class="booking__price-start">price starts as</span>
+                    
+                    <strong class="booking__cost">$ 8,500</strong>
+                    
+                    <span class="booking__per-room">per room / night</span>
+                  </div>
+                  <!-- /.booking__price -->
+                  <div class="booking__text">
+                    <div class="booking__person-room">
+                      <img class="booking__icon" src="./img/user.svg" alt="user">
+                      <span class="booking__count">2 x Guests</span>
+                    </div>
+
+                    <div class="booking__person-room">
+                      <img class="booking__icon" src="./img/home.svg" alt="room">
+                      <span class="booking__count">1 x Room</span>
+                    </div>
+                  </div>
+                  <!-- /.booking__text -->
+                </div>
+                <!-- /.booking__top -->
+                <div class="booking__call-center">
+                  <span class="booking__quick">Quick Booking</span>
+                  <a class="booking__phone" href="tel:12100">
+                    <img class="booking__phone-icon" src="./img/phone-call.svg" alt="phone-number">
+                    
+                    <span class="booking__number">12100</span>
+                  </a>
+                </div>
+
+                <button class="booking__button">View Other Options</button>
+              </div>
+              <!-- /.booking__wrap -->
+              <div class="map">
+                <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.09587833096!2d-115.1653839734223!3d36.13987871640718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4390e8c2ddf%3A0xf3a66dec07770c1b!2z0KXQuNC70YLQvtC9INCT0YDQsNC90LQg0JLQsNC60LXQudGI0LXQvdGBINCa0LvQsNCxINC-0L0g0JvQsNGBINCS0LXQs9Cw0YEg0KHRgtGA0LjQvw!5e0!3m2!1sru!2sru!4v1658432210049!5m2!1sru!2sru" width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <!-- /.map -->
+            </div>
+            <!-- /.booking -->
+          </div>
+          <!-- /.hotel-grid -->
+        </div> 
+        <!-- /.wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.hotel -->
+    
+    <section class="newsletter">
+      <div class="newsletter-wrapper">
+        <div class="subscribe newsletter__subscribe">
+          <span class="subscribe__text">subscribe to our</span>
+
+          <h2 class="subscribe__title">Newsletter</h2>
+        </div>
+
+        <form class="send-form newsletter__send-form" method="post" action="send.php">
+          <div class="send-form__input-group">
+            <input
+            class="send-form__input"
+            type="email"
+            placeholder="Your email address"
+            name="email"
+            >
+          </div>
+
+          <button class="button send-form__button">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- /.newsletter -->
+
+    <section class="reviews">
+      <div class="container">
+        <h2 class="section-title reviews__section-title">What people think about&nbsp;us</h2>
+        
+        <div class="swiper reviews-slider">
+          <div class="swiper-wrapper reviews-slider__wrapper">
+            <div class="swiper-slide reviews-slider__item">
+              <div class="reviews-slider__card">
+                <div class="profile reviews-slider__profile">
+                  <img class="profile__avatar" src="./img/reviews-avatar.jpg" alt="reviews-avatar">
+
+                  <span class="profile__name">Megan Fox</span>
+
+                  <span class="profile__date">Stayed 18 Nov, 2019</span>
+                  
+                  <div class="profile__rating">
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.profile__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__comment">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good. Overall it was a good experience and could recommend. </p>
+              </div>
+              <!-- /.reviews-slider__card -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide reviews-slider__item">
+              <div class="reviews-slider__card">
+                <div class="profile reviews-slider__profile">
+                  <img class="profile__avatar" src="./img/reviews-avatar-2.jpg" alt="reviews-avatar">
+
+                  <span class="profile__name">Horhe Barbahosa</span>
+
+                  <span class="profile__date">Stayed 20 Dec, 2020</span>
+                  
+                  <div class="profile__rating">
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.profile__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__comment">In general, I liked the rest, the location of the hotel is good, despite the flying neighbors. To the sea for 5-7 minutes, we walked with a child. The embankment has not yet been restored after the flood, so there is really no infrastructure. The hotel area itself is quiet, calm, in the future, as we understand it, it will expand, new hotels are being built. </p>
+              </div>
+              <!-- /.reviews-slider__card -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide reviews-slider__item">
+              <div class="reviews-slider__card">
+                <div class="profile reviews-slider__profile">
+                  <img class="profile__avatar" src="./img/reviews-avatar-3.jpg" alt="reviews-avatar">
+
+                  <span class="profile__name">Kaylin Clark</span>
+
+                  <span class="profile__date">Stayed 17 Oct, 2018</span>
+                  
+                  <div class="profile__rating">
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.profile__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__comment">I liked absolutely everything: impeccable cleanliness in the room, beautiful design of the garden, immersed in roses, hospitable, friendly staff. Special thanks to Irina Evgenievna for the warm welcome. We wish fragrance and prosperity to your Garden. If possible, we will repeat the rest at your place. </p>
+              </div>
+              <!-- /.reviews-slider__card -->
+            </div>
+            <!-- /.swiper-slide -->
+
+            <div class="swiper-slide reviews-slider__item">
+              <div class="reviews-slider__card">
+                <div class="profile reviews-slider__profile">
+                  <img class="profile__avatar" src="./img/reviews-avatar-4.jpg" alt="reviews-avatar">
+
+                  <span class="profile__name">Carolinа Conors</span>
+
+                  <span class="profile__date">Stayed 15 Apr, 2019</span>
+                  
+                  <div class="profile__rating">
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                    
+                    <img class="profile__star" src="./img/star.svg" alt="star" />
+                  </div>
+                  <!-- /.profile__rating -->
+                </div>
+                <!-- /.reviews-slider__profile -->
+                <p class="reviews-slider__comment">Good location, 10-15 minutes to the city beach. Away from the hustle and bustle. Friendly staff. Nice room, spacious and new. Arbors, barbecue, kitchen-dining room everything is there. The pool is not small, you can safely swim in the crowd) Well-groomed area, a variety of shrubs, flowers, there is a playground. </p>
+              </div>
+              <!-- /.reviews-slider__card -->
+            </div>
+            <!-- /.swiper-slide -->
+          </div>
+          <!-- /.swiper-wrapper -->
+          <!-- If we need navigation buttons -->
+          <button class="reviews-slider__button reviews-slider__button_prev swiper-button-prev"></button>
+          
+          <button class="reviews-slider__button reviews-slider__button_next swiper-button-next"></button>
+        </div>
+        <!-- /.reviews-slider -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.reviews -->
+
+    <section class="activities">
+      <div class="container">
+        <div class="activities-wrapper">
+          <h2 class="section-title activities__section-title">Other Activities</h2>
+          <div class="activities__content">
+            <div class="card activities__card">
+              <img class="activities__img" src="./img/Activities/activities-1.jpg" alt="activity-1">
+              <h3 class="activities__description">The curious corner of&nbsp;chamarel</h3>
+              <button class="activities__button">Book Now</button>
+            </div>
+            <!-- /.activities__card -->
+
+            <div class="card activities__card">
+              <img class="activities__img" src="./img/Activities/activities-2.jpg" alt="activity-2">
+              <h3 class="activities__description">Gymkhana club golf course</h3>
+              <button class="activities__button">Book Now</button>
+            </div>
+            <!-- /.activities__card -->
+
+            <div class="card activities__card">
+              <img class="activities__img" src="./img/Activities/activities-3.jpg" alt="activity-3">
+              <h3 class="activities__description">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
+              <button class="activities__button">Book Now</button>
+            </div>
+            <!-- /.activities__card -->
+
+            <div class="card activities__card">
+              <img class="activities__img" src="./img/Activities/activities-4.jpg" alt="activity-4">
+              <h3 class="activities__description">The blue marine discovery quest</h3>
+              <button class="activities__button">Book Now</button>
+            </div>
+            <!-- /.activities__card -->
+          </div>
+          <!-- /.content -->
+        </div>
+        <!-- /.activities-wrapper -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.activities -->
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="footer__logo">
+            <a class="footer__logo-link" href="#">
+              <img class="footer__logo-image" src="./img/footer/vertical-logo.svg" alt="Logo: Best Tour Plan">
+            </a>
+          </div>
+
+          <div class="footer__categories">
+            <h3 class="footer__title">All categories</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">All Deals</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hotels</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Activities</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Spa Packages</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hotel Day Packages</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Restaurants</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Fitness</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Rodrigues</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__categories -->
+
+          <div class="footer__additional">
+            <h3 class="footer__title">Additional information</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">About Us</a>
+              </li>
+              
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Us</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">How does it work?</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Frequently Asked Questions</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Deals.mu loyalty program</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Promote your Business on BTP</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__additional -->
+
+          <div class="footer__social-network">
+            <h3 class="footer__title">Social network</h3>
+            <div class="footer__social-links">
+              <a class="footer__link" href="#">
+                <img class="footer__icon" src="./img/footer/facebook-icon.svg" alt="facebook logo">
+              </a>
+        
+              <a class="footer__link" href="#">
+                <img class="footer__icon" src="./img/footer/youtube-icon.svg" alt="youtube logo">
+              </a>
+
+              <a class="footer__link" href="#">
+                <img class="footer__icon" src="./img/footer/instagram-icon.svg" alt="instagram logo">
+              </a>
+            </div>
+          </div>
+          <!-- /.social-network -->
+
+          <div class="footer__legal">
+            <h3 class="footer__title">Legal information</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms & Conditions</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Disclaimer</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Cancellation policy</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__legal -->
+
+          <div class="footer__contacts">
+            <h3 class="footer__title">Contact details</h3>
+            
+            <span class="footer__info">Feel free to contact us by phone, email or by our contact form</span>
+            
+            <ul class="footer__list">
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <img src="./img/footer/map-marker.svg" alt="icon: map">
+                </div>
+
+                <span class="footer__contacts-description">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
+              </li>
+
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <img src="/img/footer/phone-call.svg" alt="icon: phone-call">
+                </div>
+
+                <span class="footer__contacts-description">Tel (business hours) : <span class="phone-number">269 1500</span><br>
+                  Tel (hotline) Monday - Saturday: <span class="phone-number">52-56-61-38 (08:00 am – 20:00 pm)</span><br>
+                  Tel (hotline) Sunday: <span class="phone-number">52-56-61-38 (08:00 am – 14:00 pm)</span></span>
+              </li>
+
+              <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <img src="./img/footer/email-icon.svg" alt="icon: email">
+                </div>
+
+                <span class="footer__contacts-description">cherly.lawson@example.com</span>
+              </li>
+            </ul>
+          </div>
+          <!-- /.footer__legal -->
+
+          <div class="footer__send-message">
+            <h3 class="footer__title">Send us a message</h3>
+            <form class="form footer__form" method="post" action="send.php">
+              <div class="footer__inputs">
+                <div class="footer__inputs-group">
+                  <input class="input footer__input-name footer__input" type="text" placeholder="Your Full Name*" name="name">
+                </div>
+
+                <div class="footer__inputs-group">
+                  <input class="input footer__input-phone footer__input" type="tel" placeholder="Phone Number*" name="tel">
+                </div>
+              </div>
+              <!-- /.footer__inputs -->
+
+              <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
+
+              <div class="footer__button-container">
+                <button class="footer__button">Send</button>
+
+                <span class="footer__required">* Required Fields</span>
+              </div>
+            </form>
+          </div>
+          <!-- /.footer__send-message -->
+
+          <div class="footer-bottom">
+            <ul class="footer-bottom__list">
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="">Disclaimer</a>
+              </li>
+
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="">Conditions of use</a>
+              </li>
+
+              <li class="footer-bottom__item">
+                <a class="footer-bottom__link" href="">Cancellation policy</a>
+              </li>
+            </ul>
+
+            <div class="footer-bottom__image">
+              <img class="footer-bottom__icons" src="./img/footer/footer-bottom-icons.png" alt="footer icons">
+            </div>
+          </div>
+          <!-- /.footer-bottom -->
+        </div>
+        <!-- /.footer-wrapper -->
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal__dialog">
+        <button class="modal__close">
+          <img class="close" src="./img/modal/close.svg" alt="button close">
+        </button>
+
+        <h3 class="modal__title">Booking</h3>
+
+        <form class="form modal__form" method="post"  action="send.php">
+          <div class="modal__inputs-group">
+            <input class="input modal__input-name modal__input" type="text" placeholder="Your Full Name*" name="name">
+          </div>
+          
+          <div class="modal__inputs-group">
+            <input class="input modal__input-phone modal__input" type="tel" placeholder="Phone Number*" name="phone">
+          </div>
+
+          <div class="modal__inputs-group">
+            <input class="input modal__input-mail modal__input" type="email" placeholder="Email*" name="email">
+          </div>
+
+          <textarea class="textarea modal__textarea" placeholder="Message" name="message"></textarea>
+
+          <div class="modal__button-container">
+            <button class="modal__button">Send</button>
+            
+            <span class="modal__required">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- /.modal -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/just-validate3.3.3.min.js"></script>
+    <script src="./js/inputmask.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

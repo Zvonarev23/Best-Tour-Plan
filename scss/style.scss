@@ -1,0 +1,35 @@
+// Подключаем normalize
+@import "./normalize";
+
+// Подключаем переменные
+@import "./variables";
+
+// Подключаем основные настройки
+@import "./settings";
+
+// Подключаем стили для header
+@import "./blocks/header";
+
+// Подключаем блок breadcrumb
+@import "./blocks/breadcrumb";
+
+// Подключаем блок Отель
+@import "./blocks/hotel";
+
+// Подключаем блок c подпиской
+@import "./blocks/newsletter";
+
+// Подключаем блок c отзывами 
+@import "./blocks/reviews";
+
+// Подключаем секцию с активностями
+@import "./blocks/activities";
+
+// Подключаем подвал сайта
+@import "./blocks/footer";
+
+// Подключаем стили модального окна
+@import "./blocks/modal";
+
+// Подключаем медиа-запросы
+@import "./media";

@@ -1,0 +1,259 @@
+.hotel {
+  margin-bottom: 70px;
+  padding-top: 17px;
+
+  &-info {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__text {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__stars {
+      width: 100%;
+      margin-left: 0.5px;
+      display: block;
+    }
+
+    &__star {
+      margin-right: -2px;
+    }
+
+    &__name {
+      margin: 0 14.5px 0 0;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    &__offer {
+      height: 20px;
+      margin-bottom: 4px;
+      padding: 3px 8.7px 4px 8.7px;
+      display: flex;
+      align-self: flex-end;
+      font-size: 10px;
+      font-weight: 600;
+      line-height: 13px;
+      background-color: $primary;
+      color: $light;
+      border-radius: 3px;
+    }
+
+    &__description {
+      width: 100%;
+      margin: 0;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+    }
+
+    &__raiting {
+      width: 65px;
+      min-height: 45px;
+      margin-bottom: 7.5px;
+      padding: 9px 6px 6px 7px;
+      display: flex;
+      flex-wrap: wrap;
+      align-self: flex-end;
+      justify-content: center;
+      flex-shrink: 0;
+      background-color: $primary;
+      color: $light;
+      border-radius: 4px;
+    }
+
+    &__rattings {
+      font-size: 8px;
+      font-weight: 600;
+      line-height: 10px;
+    }
+
+    &__counter {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 18px;
+    }
+
+    &__max-counter {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 13px;
+    }
+  }
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    content: "";
+}
+
+.hotel-grid {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hotel-slider {
+  position: relative;
+  z-index: 0;
+  width: 728px;
+  height: 450px;  
+  margin-left: 1.5px;
+  border-radius: 8px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;      
+	  left: 0; 
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
+  }
+
+  &__button {
+    transform: translateY(-40%);
+    width: 30px;
+    height: 30px;
+    margin-top: 0;
+    border: none;
+    background-color: transparent;
+    background-position: center;
+
+    &_prev {
+      left: 16px;
+      background-image: url("../../img/arrow-prev.svg");
+      background-repeat: no-repeat;
+    }
+
+    &_next {
+      right: 18px;
+      background-image: url("../../img/arrow-next.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.booking {
+  &__wrap {
+    width: 350px;
+    height: 210px;
+    margin-bottom: 27px;
+    padding: 29px 29px 27px 26px;
+    border-radius: 8px;
+    font-family: "Nunito";
+    background-color: $dark;
+    color: $light;
+  }
+
+  &__top {
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__price-start {
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 400;
+  }
+
+  &__cost {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 33px;
+  }
+
+  &__per-room {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 10px;
+  }
+
+  &__text {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__person-room {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &:first-of-type {
+      margin-bottom: 7px;
+    }
+  }
+
+  &__count {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__call-center {
+    margin-bottom: 17px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__quick {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-icon {
+    margin-right: 8px;
+  }
+
+  &__number {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;  
+    color: $light;
+  }
+
+  &__button {
+    padding: 14px 83px 12px 84px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    background-color: $primary;
+    color: $light;
+  }
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
